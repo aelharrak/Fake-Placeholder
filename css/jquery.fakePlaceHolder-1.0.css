@@ -1,0 +1,74 @@
+.labels-move-up .wrapper {
+  background: white;
+  height: 40px;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.labels-move-up .wrapper.focused .label {
+  color: #7f7f7f;
+}
+.labels-move-up .label {
+  top: 15px;
+  left: 10px;
+  padding: 0;
+  font-weight: normal;
+  line-height: 15px;
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all .05s linear;
+  -moz-transition: all .05s linear;
+  -transition: all .05s linear;
+}
+.labels-move-up .input {
+  color: #7f7f7f;
+  font-size: 13px;
+  border: none;
+  line-height: 45px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.labels-move-up .error {
+  border: 1px solid red;
+}
+.labels-move-up .error .input,
+.labels-move-up .error .label {
+  color: red;
+}
+.labels-move-up input[type="password"],
+.labels-move-up input[type="text"],
+.labels-move-up input[type="email"],
+.labels-move-up textarea {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+.labels-move-up input,
+.labels-move-up select {
+  height: auto!important;
+  outline: 0;
+}
+.labels-move-up input:required,
+.labels-move-up input:invalid {
+  box-shadow: none;
+}
+.labels-move-up .separator {
+  border-bottom: 1px solid #ddd;
+  display: block;
+  margin: 5px 0;
+}
+.labels-move-up .wrapper.focused .label,
+.labels-move-up .wrapper.populated .label {
+  top: 0;
+  font-size: 11px;
+  color: #7f7f7f;
+}

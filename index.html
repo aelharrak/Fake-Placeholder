@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <link href="css/bootstrap.css" media="all" rel="stylesheet" />
+        <link href="css/jquery.fakePlaceHolder-1.0.css" media="all" rel="stylesheet"/>
+        <link href="css/main.css" media="all" rel="stylesheet" />
+    </head>
+    <body>
+        <form id='formBody' class='FlowupLabels'>
+
+            <div class='wraper'>
+                <label for="private-titleCode" class="fl_label">Title</label>
+                <select class="fl_input" name="personalInfo.titleCode" id="private-titleCode">
+                    <option></option>
+                    <option value="1">Mrs</option>
+                    <option value="2">Mr</option>
+                </select>
+            </div>
+
+            <div class='wraper'>
+                <label class='fl_label' for='rf_name'>Name:</label>
+                <input class='fl_input' type='text' id='rf_name' />
+            </div>
+
+            <div class='wraper'>
+                <label class='fl_label' for='rf_email'>Email:</label>
+                <input class='fl_input' type='email' id='rf_email' />
+            </div>
+
+            <div class='wraper'>
+                <label class='fl_label' for='rf_company'>Company:</label>
+                <input class='fl_input' type='text' id='rf_company' />
+            </div>
+
+            <div class='wraper'>
+                <label class='fl_label' for='rf_phoned'>Phone (fix):</label>
+                <input class='fl_input' type='tel' id='rf_phoned' value="LL" />
+            </div>
+            <div class='wraper'>
+                <label class='fl_label' for='rf_phoneds'>Phone (mobile):</label>
+                <input class='fl_input' type='tel' id='rf_phoneds' value="LssL" disabled />
+            </div>
+
+            <div class='wraper'>
+                <label class='fl_label' for='rf_phoneds'>Address:</label>
+                <textarea class='fl_input' type='tel' id='rf_phoneds' ></textarea>
+            </div>
+
+        </form>
+
+        <footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="js/jquery.fakePlaceHolder-1.0.js"></script>
+
+            <script>
+                (function(){
+                    $('.FlowupLabels').FlowupLabels({
+                        // Handles the possibility of having input boxes prefilled on page load
+                        feature_onInitLoad: true,
+                        // Class when focusing an input
+                        class_focused: 		'focused',
+                        // Class when an input has text entered
+                        class_populated: 	'populated'	
+                    });
+                })();
+            </script>
+        </footer>
+    </body>
+
+</html>
